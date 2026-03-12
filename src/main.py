@@ -56,9 +56,9 @@ filtered_df["gdp_score"] = four_level_score(filtered_df["gdp_per_capita_2024"])
 # Population und E-Commerce höher gewichten
 # -----------------------------
 filtered_df["total_score"] = (
-    filtered_df["population_score"] * 0.4 +
-    filtered_df["ecommerce_score"] * 0.4 +
-    filtered_df["gdp_score"] * 0.2
+    filtered_df["population_score"] * 0.35 +
+    filtered_df["ecommerce_score"] * 0.35 +
+    filtered_df["gdp_score"] * 0.3
 )
 
 # Nach Score sortieren
